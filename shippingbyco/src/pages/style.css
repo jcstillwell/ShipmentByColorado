@@ -1,0 +1,120 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(247, 244, 244);
+    min-height: 100vh;
+    font-family: 'Lato', sans-serif;
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.fadeOut {
+    animation: fadeOut 1.5s forwards;
+}
+
+.fadeIn {
+    animation: fadeIn 1.5s forwards;
+}
+
+.dynamic-title {
+    color: white;
+}
+
+.header-banner {
+    width: 100%;
+    height: 8vh;
+    background-color: #0077b6;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.header-banner img {
+    width: 4vw;
+    height: 8vh;
+    left: 0;
+    padding: 15px
+}
+
+.header-banner h1 {
+    color: white;
+    padding: 10px
+}
+
+.main-slogan-catch-container {
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0), rgba(245,245,245,1)), url('../../public/denver-skyline-at-night.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 700px;
+}
+
+.main-slogan-catch-container h1, .main-slogan-catch-container h2 {
+    color: white;
+}
+
+button {
+    background-color: #48cae4;
+    border-radius: 50%;
+    border: none;
+    width: 100px;
+    height: 100px;
+}
+
+.contact-sect {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50vh;
+    width: 100vw;
+    height: 50vh;
+    background-color: #0077b6;
+}
+
+.contact-card {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(#48cae4, #90e0ef);
+    transition: all ease-in-out .2s;
+    border-radius: 15px; 
+    width: 50vw;
+    height: 5vh;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.contact-card:hover {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(#48cae4, #304549);
+    transition: all ease-in-out .3s;
+    border-radius: 15px; 
+    width: 50vw;
+    height: 10vh;
+    align-items: center;
+}
+
+.contact-card-expanded {
+    display: flex;
+    justify-content: center;
+    transition: all ease-in-out .2s;
+    background: linear-gradient(#48cae4, #90e0ef);
+    border-radius: 15px; 
+    width: 50vw;
+    height: 15vh;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    align-items: center;
+}
