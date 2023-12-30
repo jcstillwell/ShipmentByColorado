@@ -31,7 +31,7 @@ const Main = () => {
             <h1 className={`dynamic-title ${animationClass}`}>{titleText}</h1>
         </div>
         <div className="main-slogan-catch-container">
-            <h1>Real Estate wholesaling services that work.</h1>
+            <h1>Beyond Service, Beyond Satisfaction - Experience Business Excellence!</h1>
             <button className='functional-header-btn' onClick={scrollToContact}><h2>Contact Us</h2></button>
         </div>
         <div className="about-sect">
@@ -43,6 +43,13 @@ const Main = () => {
             Eu scelerisque felis imperdiet proin fermentum. Gravida arcu ac tortor dignissim convallis aenean et tortor at. Nisl rhoncus mattis rhoncus urna neque viverra. Ut aliquam purus sit amet. Est pellentesque elit ullamcorper dignissim cras. Rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis. Ultrices in iaculis nunc sed augue lacus viverra. Lectus proin nibh nisl condimentum id venenatis a condimentum. Venenatis a condimentum vitae sapien. Ut ornare lectus sit amet est. Volutpat lacus laoreet non curabitur gravida arcu ac tortor dignissim. Et molestie ac feugiat sed lectus vestibulum. Aliquam ut porttitor leo a diam sollicitudin tempor. Augue ut lectus arcu bibendum at varius vel pharetra.
             Volutpat ac tincidunt vitae semper quis lectus. Turpis egestas maecenas pharetra convallis posuere morbi leo urna. Facilisis volutpat est velit egestas dui id ornare. Turpis egestas sed tempus urna et pharetra pharetra. Tellus pellentesque eu tincidunt tortor aliquam nulla facilisi cras. Nunc vel risus commodo viverra maecenas accumsan lacus vel facilisis. Fermentum dui faucibus in ornare quam viverra. Massa tempor nec feugiat nisl pretium fusce id velit. Tincidunt augue interdum velit euismod in pellentesque. A arcu cursus vitae congue mauris rhoncus aenean vel. Sit amet nisl suscipit adipiscing bibendum est ultricies. Eu volutpat odio facilisis mauris sit amet massa. Ultrices dui sapien eget mi proin sed libero enim. Lobortis scelerisque fermentum dui faucibus in ornare quam viverra orci. Purus viverra accumsan in nisl nisi scelerisque eu. Sed risus pretium quam vulputate dignissim suspendisse. Et magnis dis parturient montes nascetur. Volutpat diam ut venenatis tellus in metus. Turpis cursus in hac habitasse platea dictumst. Gravida rutrum quisque non tellus orci ac auctor augue mauris.
             </p>
+
+            <div className={contact1Expanded ? 'contact-card-expanded':'contact-card'} onClick={() => setContact1Expanded(!contact1Expanded)}>
+                <h2> Van</h2>
+            </div>
+            <div className={contact2Expanded ? 'contact-card-expanded':'contact-card'} onClick={() => setContact2Expanded(!contact2Expanded)}>
+                <h2></h2>
+            </div>
         </div>
         <div className="services-sect">
         <h1>Services</h1>
@@ -56,12 +63,8 @@ const Main = () => {
         </div>
         <div ref={contactRef} className="contact-sect">
             <h1>Contact Us</h1>
-            <div className={contact1Expanded ? 'contact-card-expanded':'contact-card'} onClick={() => setContact1Expanded(!contact1Expanded)}>
-                <h2>Contact Van</h2>
-            </div>
-            <div className={contact2Expanded ? 'contact-card-expanded':'contact-card'} onClick={() => setContact2Expanded(!contact2Expanded)}>
-                <h2>Contact ?</h2>
-            </div>
+            <h2>Email:</h2>
+            <h2>Phone Number:</h2>
         </div>
     </div>
     );

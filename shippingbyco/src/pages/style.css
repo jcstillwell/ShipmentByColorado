@@ -85,7 +85,7 @@ button {
 .contact-card {
     display: flex;
     justify-content: center;
-    background: linear-gradient(#48cae4, #90e0ef);
+    background: linear-gradient(#0077b6, #023e8a);
     transition: all ease-in-out .2s;
     border-radius: 15px; 
     width: 50vw;
@@ -98,7 +98,7 @@ button {
 .contact-card:hover {
     display: flex;
     justify-content: center;
-    background: linear-gradient(#48cae4, #304549);
+    background: linear-gradient(#0077b6, #023e8a);
     transition: all ease-in-out .3s;
     border-radius: 15px; 
     width: 50vw;
@@ -110,11 +110,23 @@ button {
     display: flex;
     justify-content: center;
     transition: all ease-in-out .2s;
-    background: linear-gradient(#48cae4, #90e0ef);
+    background: linear-gradient(#48cae4, #023e8a);
     border-radius: 15px; 
     width: 50vw;
     height: 15vh;
     margin-top: 5px;
     margin-bottom: 10px;
     align-items: center;
+}
+
+.contact-card h2 {
+    font-size: 20px;
+    padding-bottom: 2%;
+    transition: all ease-in-out .2s;
+}
+
+.contact-card-expanded h2 {
+    font-size: 25px;
+    padding-bottom: 10%;
+    transition: all ease-in-out .2s;
 }
