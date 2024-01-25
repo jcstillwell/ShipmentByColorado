@@ -11,8 +11,8 @@ const Main = () => {
 
     const [contact1Expanded, setContact1Expanded] = useState(false)
     const [contact2Expanded, setContact2Expanded] = useState(false)
-    const [phoneRevealed1, setPhoneRevealed1] = useState(false)
-    const [phoneRevealed2, setPhoneRevealed2] = useState(false)
+    const [bottomEmailRevealed, setbottomEmailRevealed] = useState(false)
+    const [bottomPhoneRevealed, setbottomPhoneRevealed] = useState(false)
     const [titleText, setTitleText] = useState('Shipment By Colorado');
     const [animationclassName, setAnimationclassName] = useState('fadeOut');
     const contactRef = useRef(null);
@@ -33,21 +33,22 @@ const Main = () => {
     return (
     <div className="container">
         <div className="header-banner">
-            <img src='/logo192.png' id="main-logo-img"/>
+        <img src='/logo-main-top.png' id="logo-main-top"/>
             <div className='separator'></div>
             <h1 className={`dynamic-title ${animationclassName}`}>{titleText}</h1>
         </div>
         <div className="main-slogan-catch-container">
             <h1>Beyond Service, Beyond Satisfaction - Experience Business Excellence!</h1>
-            <button className='functional-header-btn' onClick={scrollToContact}><h2>Contact Us</h2></button>
+            <button className='functional-header-btn' onClick={scrollToContact}><h2>CONTACT US</h2></button>
         </div>
         <div className="about-sect">
             <p id="paragraph-top">
-                Beyond buying and selling properties, we're committed to providing helpful services that go the extra mile. Whether it's expert advice on the market trends, personalized consultations, or resources to make informed decisions, we're here to empower you on whatever endeavors you might have. Join us in turning dreams into addresses and discover a world where motivation meets exceptional service.
+            Welcome to our platform, Being Born and raised in Denver CO we know where the spirit of hard work and entrepreneurial grit converge. As the co-founders of this venture, we are two dedicated individuals who have meticulously traversed the path of diligence to reach the summit of our respective fields. Our journey is a testament to the countless hours invested in honing our skills, learning from setbacks, and embracing challenges as opportunities for growth.
             </p>
             <img id='about-photo-main' src='./about-photo-main.png'/>
 
             <p id="paragraph-bottom">
+            From the early days of ideation to the late nights refining strategies, we've walked the walk of determined entrepreneurs, and we bring that wealth of experience to the heart of our platform. We are here not just as entrepreneurs but as guides to set you on any journey you may have. Having navigated the complexities of the business landscape. Through this platform, we extend our expertise to empower fellow dreamers and doers. Whether you're a seeking guidance or an established professional aiming for new heights, join us as we share insights, lessons, and a collaborative spirit. 
             </p>
             <div className="personal-contact-sect">
                 <h1>Personal Contact</h1>
@@ -86,7 +87,7 @@ const Main = () => {
                             <div className="card-content"> 
                                 <h3 className="contact-card-about">Hi, My Name is Don. I am based out of Colorado Springs, Colorado. A very motivated entrepreneur with 7+ years in sales experience. Graduate of Metropolitan State University with a Degree in Communications. Always looking for the next opportunity to change not only mine but others lives! </h3>
                                 <div className="personal-links">   
-                                    <div className="contact-card-link" onClick={() => setPhoneRevealed2(true)}>
+                                    <div className="contact-card-link">
                                             <FontAwesomeIcon className="link-icon-cc" icon={faPhone} />
                                             <h3>Phone: 719-960-8728</h3>
                                     </div> 
@@ -106,21 +107,31 @@ const Main = () => {
         <div ref={contactRef} className="contact-sect">
             <h1>Contact Us</h1>
                 <div className="links">
-                    <div className="ind-link-container">
-                        <a href='https://www.homedepot.com'>
-                            <div className="link-box">
-                                <FontAwesomeIcon className="link-icon" icon={faEnvelope} />
-                                <h2>Email</h2>
-                            </div>
-                        </a>
+                    <div className="bottom-expandable">
+                        <div className="ind-link-container" onClick={() => setbottomEmailRevealed(!bottomEmailRevealed)}>
+                            <a>
+                                <div className="link-box">
+                                    <FontAwesomeIcon className="link-icon" icon={faEnvelope} />
+                                    <h2>Email</h2>
+                                </div>
+                            </a>
+                        </div>
+                        {bottomEmailRevealed && 
+                            <h4 className="email-bottom">shipmentbyco@pacificwest.com</h4>
+                        }
                     </div>
-                    <div className="ind-link-container">
-                        <a href='https://www.homedepot.com'>
-                            <div className="link-box">
-                                <FontAwesomeIcon className="link-icon" icon={faPhone} />
-                                <h2>Phone</h2>
-                            </div>
-                        </a>
+                    <div className="bottom-expandable">
+                        <div className="ind-link-container" onClick={() => setbottomPhoneRevealed(!bottomPhoneRevealed)}>
+                            <a>
+                                <div className="link-box">
+                                    <FontAwesomeIcon className="link-icon" icon={faPhone} />
+                                    <h2>Phone</h2>
+                                </div>
+                            </a>
+                        </div>
+                        {bottomPhoneRevealed && 
+                            <h4 className="phone-number-bottom">303-859-3038</h4>
+                        }
                     </div>
                     <div className="ind-link-container">
                         <a href='https://www.facebook.com/profile.php?id=61550938487372&mibextid=hu50Ix'>
@@ -147,6 +158,7 @@ const Main = () => {
                         </a>
                     </div>
                 </div>
+                <img src='/logo-main.png' id="logo-main-bottom"/>
         </div>
     </div>
     );
