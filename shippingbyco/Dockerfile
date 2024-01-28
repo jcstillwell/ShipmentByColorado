@@ -2,6 +2,6 @@ FROM node:alpine
 
 WORKDIR /app
 
-COPY . .
+COPY ./node_modules /app/node_modules
 
-RUN npm run build
+COPY ./build /app/build
