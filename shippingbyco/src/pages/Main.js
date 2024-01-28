@@ -9,8 +9,8 @@ import { faInstagram, faLinkedin, faTiktok, faTwitter, faFacebook } from '@forta
 
 const Main = () => {
 
-    const [contact1Expanded, setContact1Expanded] = useState(false)
-    const [contact2Expanded, setContact2Expanded] = useState(false)
+    const [contact1Expanded, setContact1Expanded] = useState(true)
+    const [contact2Expanded, setContact2Expanded] = useState(true)
     const [bottomEmailRevealed, setbottomEmailRevealed] = useState(false)
     const [bottomPhoneRevealed, setbottomPhoneRevealed] = useState(false)
     const [titleText, setTitleText] = useState('Shipment By Colorado');
@@ -107,31 +107,31 @@ const Main = () => {
         <div ref={contactRef} className="contact-sect">
             <h1>Contact Us</h1>
                 <div className="links">
-                    <div className="bottom-expandable">
-                        <div className="ind-link-container" onClick={() => setbottomEmailRevealed(!bottomEmailRevealed)}>
+                    <div className="ind-link-container" onClick={() => setbottomEmailRevealed(!bottomEmailRevealed)}>
                             <a>
-                                <div className="link-box">
-                                    <FontAwesomeIcon className="link-icon" icon={faEnvelope} />
-                                    <h2>Email</h2>
+                                <div id="link-box-email-outer">
+                                    <div id="link-box-email-inner">
+                                        <FontAwesomeIcon className="link-icon" icon={faEnvelope} />
+                                        <h2>Email</h2>
+                                    </div>
+                                    {bottomEmailRevealed &&
+                                        <h4 className="email-bottom">shipmentbyco@pacificwest.com</h4>
+                                    }
                                 </div>
                             </a>
-                        </div>
-                        {bottomEmailRevealed && 
-                            <h4 className="email-bottom">shipmentbyco@pacificwest.com</h4>
-                        }
                     </div>
-                    <div className="bottom-expandable">
-                        <div className="ind-link-container" onClick={() => setbottomPhoneRevealed(!bottomPhoneRevealed)}>
+                    <div className="ind-link-container" onClick={() => setbottomPhoneRevealed(!bottomPhoneRevealed)}>
                             <a>
-                                <div className="link-box">
-                                    <FontAwesomeIcon className="link-icon" icon={faPhone} />
-                                    <h2>Phone</h2>
+                                <div id="link-box-phone-outer">
+                                    <div id="link-box-phone-inner">
+                                        <FontAwesomeIcon className="link-icon" icon={faPhone} />
+                                        <h2>Phone</h2>
+                                    </div>
+                                    {bottomPhoneRevealed &&
+                                        <h4 className="phone-number-bottom">303-859-3038</h4>
+                                    }
                                 </div>
                             </a>
-                        </div>
-                        {bottomPhoneRevealed && 
-                            <h4 className="phone-number-bottom">303-859-3038</h4>
-                        }
                     </div>
                     <div className="ind-link-container">
                         <a href='https://www.facebook.com/profile.php?id=61550938487372&mibextid=hu50Ix'>
@@ -150,7 +150,7 @@ const Main = () => {
                         </a>
                     </div>
                     <div className="ind-link-container">
-                        <a href='https://www.homedepot.com'>
+                        <a href='https://www.linkedin.com/in/shipment-by-colorado-b486812a8/'>
                             <div className="link-box">
                                 <FontAwesomeIcon className="link-icon" icon={faLinkedin} />
                                 <h2>LinkedIn</h2>

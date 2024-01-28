@@ -29,7 +29,8 @@
 
 .dynamic-title {
     color: white;
-    font-size: 40px;
+    font-size: 32px;
+    margin-left: 10px;
 }
 
 .header-banner {
@@ -92,16 +93,16 @@ button:hover {
 }
 
 #paragraph-top {
-    line-height: 1.5;
+    line-height: 1.8;
     margin-top: 130px;
     margin-bottom: 100px;
-    font-size: 20px;
+    font-size: 22px;
 }
 
 #paragraph-bottom {
-    line-height: 1.5;
+    line-height: 1.8;
     margin-top: 150px;
-    font-size: 18px;
+    font-size: 22px;
 }
 
 #about-photo-main {
@@ -128,7 +129,7 @@ button:hover {
     align-items: center;
     margin-top: 50vh;
     width: 100%;
-    height: 55vh;
+    height: 60vh;
     background-color: #163a5f;
 }
 
@@ -177,8 +178,68 @@ button:hover {
     box-shadow: 2px 2px 5px rgba(126, 126, 126, 0.3);
 }
 
+    /* Section for special case links with phone and email */
+
+    #link-box-phone-outer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding-left: .5vw;
+        padding-right: .5vw;
+        transition: all ease-in-out .3s;
+    }
+    
+    #link-box-email-outer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding-left: .5vw;
+        padding-right: .5vw;
+        transition: all ease-in-out .3s;
+    }
+
+    #link-box-phone-inner {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding-left: .5vw;
+        padding-right: .5vw;
+        transition: all ease-in-out .3s;
+    }
+    
+    #link-box-email-inner {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding-left: .5vw;
+        padding-right: .5vw;
+        transition: all ease-in-out .3s;
+    }
+
+    #link-box-phone-inner:hover {
+        transition: all ease-in-out .3s;
+        width: 100%;
+        padding-left: .7vw;
+        padding-right: .7vw;
+        box-shadow: 2px 2px 5px rgba(126, 126, 126, 0.3);
+    }
+    
+    #link-box-email-inner:hover {
+        transition: all ease-in-out .3s;
+        width: 100%;
+        box-shadow: 2px 2px 5px rgba(126, 126, 126, 0.3);
+    }
+
 .personal-contact-sect {
-    padding-top: 50px;
+    padding-top: 40vh;
 }
 
 .contact-cards {
@@ -274,12 +335,17 @@ button:hover {
 }
 
 .card-content {
-    margin-bottom: none;
+    display: flex;
+    flex-direction: column;
     height: 60%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10%;
 }
 
 .contact-card-about {
-    line-height: 1.7;
+    line-height: 1.8;
+    width: 90%;
 }
 
 .personal-links {
@@ -325,7 +391,7 @@ button:hover {
 }
 
 #logo-main-top {
-    width: 5%;
+    width: 4%;
     height: 100%;
     left: 0;
     margin-right: 10px;
