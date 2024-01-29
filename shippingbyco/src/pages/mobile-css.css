@@ -66,6 +66,7 @@
     .main-slogan-catch-container h1 {
         color: rgb(255, 255, 255);
         font-size: x-large;
+        margin-top: 10%;
     } 
     
     .main-slogan-catch-container h2 {
@@ -101,17 +102,18 @@
         line-height: 1.5;
         margin-top: 130px;
         margin-bottom: 100px;
-        font-size: 20px;
+        font-size: 18px;
     }
     
     #paragraph-bottom {
         line-height: 1.5;
         margin-top: 150px;
-        font-size: 20px;
+        font-size: 18px;
     }
     
     #about-photo-main {
-        width: 90%;
+        width: 80vw;
+        height: 75vw;
         box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
         border-radius: 15px;
     }
@@ -326,18 +328,21 @@
         top: 70px;
         left: 0;
         width: 100%;
+        font-size: 20px;
     }
     
     .plus-minus {
         position: absolute;
         top: 0;
         left: 90%;
+        font-size: 11px;
     }
     
     .plus-minus-expanded {
         position: absolute;
         top: 0;
         left: 90%;
+        font-size: 11px;
     }
     
     .card-content {
@@ -351,9 +356,10 @@
     
     .contact-card-about {
         line-height: 1.6;
-        font-size: medium;
+        font-size: 14px;
         margin-bottom: 15%;
         overflow: hidden;
+        width: 95%;
     }
 
     #contact-card-about-van {
@@ -365,7 +371,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        font-size: 15px;
+        font-size: 11px;
     }
     
     .personal-links a {
@@ -383,12 +389,23 @@
         margin-bottom: 7px;
         padding: 5px;
     }
-    
-    .link-icon-cc {
-        font-size: 25px;
-        padding: 10px;
+
+    #link-phone-cc {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        height: 7vh;
+        margin-bottom: 7px;
+        padding: 5px;
     }
     
+    .link-icon-cc {
+        font-size: 20px;
+        padding: 7px;
+    }
+
     .contact-card-link:hover {
         display: flex;
         flex-direction: row;

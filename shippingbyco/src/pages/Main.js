@@ -63,7 +63,7 @@ const Main = () => {
                             <div className="card-content"> 
                                 <h3 className="contact-card-about" id="contact-card-about-van">Hi! My name is Van I am based out of Denver Colorado. I am a young entrepreneur who is driven and passionate about making a positive impact through my services. I have 4 years of sales experience, and I’m always looking to contribute meaningful insight to anyone who may need it! </h3>
                                 <div className="personal-links">   
-                                    <div className="contact-card-link">
+                                    <div className="contact-card-link" id="link-phone-cc">
                                             <FontAwesomeIcon className="link-icon-cc" icon={faPhone} />
                                             <h3>Phone: 303-859-3038</h3>
                                     </div> 
@@ -87,7 +87,7 @@ const Main = () => {
                             <div className="card-content"> 
                                 <h3 className="contact-card-about">Hi, My Name is Don. I am based out of Colorado Springs, Colorado. A very motivated entrepreneur with 7+ years in sales experience. Graduate of Metropolitan State University with a Degree in Communications. Always looking for the next opportunity to change not only mine but others lives! </h3>
                                 <div className="personal-links">   
-                                    <div className="contact-card-link">
+                                    <div className="contact-card-link" id="link-phone-cc">
                                             <FontAwesomeIcon className="link-icon-cc" icon={faPhone} />
                                             <h3>Phone: 719-960-8728</h3>
                                     </div> 
