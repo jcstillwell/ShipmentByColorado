@@ -4,8 +4,6 @@ WORKDIR /app
 
 COPY . .
 
-RUN npm install
-
 RUN npm build
 
 #COPY ./node_modules /app/node_modules
