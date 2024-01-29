@@ -49,7 +49,7 @@
     
     .separator {
         width: 2px;
-        height: 95%;
+        height: 90%;
         background-color: rgb(255, 255, 255);
         border-radius: 20px;
     }
@@ -325,10 +325,10 @@
     
     .name {
         position: absolute;
-        top: 70px;
+        top: 80px;
         left: 0;
         width: 100%;
-        font-size: 20px;
+        font-size: 17px;
     }
     
     .plus-minus {
@@ -356,14 +356,14 @@
     
     .contact-card-about {
         line-height: 1.6;
-        font-size: 14px;
-        margin-bottom: 15%;
+        font-size: 13px;
+        margin-bottom: 18%;
         overflow: hidden;
-        width: 95%;
+        width: 85%;
     }
 
     #contact-card-about-van {
-        margin-bottom: 27%;
+        margin-bottom: 30%;
     }
     
     .personal-links {
@@ -400,6 +400,12 @@
         margin-bottom: 7px;
         padding: 5px;
     }
+
+    #link-phone-cc:hover {
+        border-radius: 0;
+        box-shadow: 0px 0px 0px rgba(68, 57, 57, 0.5);
+        background: linear-gradient(white, white);
+    }
     
     .link-icon-cc {
         font-size: 20px;
@@ -422,7 +428,7 @@
     
     #logo-main-top {
         width: 15%;
-        height: 100%;
+        height: 85%;
         left: 0;
         margin-bottom: 7px;
         margin-top: 5px;
