@@ -9,8 +9,8 @@ import { faInstagram, faLinkedin, faTiktok, faTwitter, faFacebook } from '@forta
 
 const Main = () => {
 
-    const [contact1Expanded, setContact1Expanded] = useState(true)
-    const [contact2Expanded, setContact2Expanded] = useState(true)
+    const [contact1Expanded, setContact1Expanded] = useState(false)
+    const [contact2Expanded, setContact2Expanded] = useState(false)
     const [bottomEmailRevealed, setbottomEmailRevealed] = useState(false)
     const [bottomPhoneRevealed, setbottomPhoneRevealed] = useState(false)
     const [titleText, setTitleText] = useState('Shipment By Colorado');
@@ -43,7 +43,7 @@ const Main = () => {
         </div>
         <div className="about-sect">
             <p id="paragraph-top">
-            Welcome to our platform, Being Born and raised in Denver CO we know where the spirit of hard work and entrepreneurial grit converge. As the co-founders of this venture, we are two dedicated individuals who have meticulously traversed the path of diligence to reach the summit of our respective fields. Our journey is a testament to the countless hours invested in honing our skills, learning from setbacks, and embracing challenges as opportunities for growth.
+            Welcome to our platform, Being Born and raised in Denver, CO we know where the spirit of hard work and entrepreneurial grit converge. As the co-founders of this venture, we are two dedicated individuals who have meticulously traversed the path of diligence to reach the summit of our respective fields. Our journey is a testament to the countless hours invested in honing our skills, learning from setbacks, and embracing challenges as opportunities for growth.
             </p>
             <img id='about-photo-main' src='./about-photo-main.png'/>
 
@@ -61,7 +61,7 @@ const Main = () => {
                         </div>
                         {contact1Expanded &&
                             <div className="card-content"> 
-                                <h3 className="contact-card-about">Hi! My name is Van I am based out of Denver Colorado. I am a young entrepreneur who is driven and passionate about making a positive impact through my services. I have 4 years of sales experience, and I’m always looking to contribute meaningful insight to anyone who may need it! </h3>
+                                <h3 className="contact-card-about" id="contact-card-about-van">Hi! My name is Van I am based out of Denver Colorado. I am a young entrepreneur who is driven and passionate about making a positive impact through my services. I have 4 years of sales experience, and I’m always looking to contribute meaningful insight to anyone who may need it! </h3>
                                 <div className="personal-links">   
                                     <div className="contact-card-link">
                                             <FontAwesomeIcon className="link-icon-cc" icon={faPhone} />
